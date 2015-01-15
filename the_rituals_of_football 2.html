@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!-- ** see note -->
+
+    <head>
+        <!-- The classical Cartesian distinction, head and body! In the head comes all the metadata page needs to function-->
+
+        <title>The rituals of football</title> <!-- This is the title shown in the Window bar -->
+
+        <meta charset="utf-8"> <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This tag is important if we make a responsive site
+                                                                                  see http://kabk.github.io/govt4-coding/responsive-layout.html -->
+
+        <meta name="description" content="This is where you can put a short description of the page. Google will sometimes display this, and Facebook uses it to display in a link preview.">
+        
+        <!-- The following metadata can be useful for archiving -->
+        
+        <meta property="dc:creator" content="Menno de Bruijn">
+        <meta property="dc:created" content="2014-11-17T00:00:00Z">
+        <meta property="dc:modified" content="2014-11-20T00:00:00Z">
+        
+        <link rel="shortcut icon" href="favicon.ico">
+        
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
+                
+        <!-- Link stylesheets!-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- This normalize.css file takes care of some inconsistencies between browsers -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" /><!-- Here I put the rest of my styles-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+	    <script src="js/modernizr.custom.js"></script>
+	    <script src="js/jquery.min.js"></script><style type="text/css"></style>
+	    <script>
+	    $(function() {
+	      $('a[href*=#]:not([href=#])').click(function() {
+	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	          var target = $(this.hash);
+	          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	          if (target.length) {
+	            $('html,body').animate({
+	              scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	          }
+	        }
+	      });
+	    });
+	    
+	 $(function() {
+    // Change this selector to find whatever your 'boxes' are
+    var boxes = $("img, img2, img3, img4, img5, img6, img7, img8, img9, img10");
+
+    // Set up click handlers for each box
+    boxes.click(function() {
+        var el = $(this), // The box that was clicked
+            max = 0;
+
+        // Find the highest z-index
+        boxes.each(function() {
+            // Find the current z-index value
+            var z = parseInt( $( this ).css( "z-index" ), 10 );
+            // Keep either the current max, or the current z-index, whichever is higher
+            max = Math.max( max, z );
+        });
+
+        // Set the box that was clicked to the highest z-index plus one
+        el.css("z-index", max + 1 );
+    });
+});
+
+	    </script>
+    </head>
+    <body>
+       <!-- In HTML5 there are the elements header, nav, article and aside that are just like divs (blocks)… 
+                      The only difference is that through their name, they indicate their function,
+                      so it helps in structuring the code -->
+                 <!-- Note: the <head> tag is invisible metadata, the <header> tag is visible on the page!-->
+           
+              
+              
+        <nav>
+            <ul> 
+		    	<li><a href="the_rituals_of_football.html">The ritual of football</a></li>
+			</ul>
+			
+		</nav>
+		
+		
+		<nav2>			
+			<ul> 
+		    	<li><a href="index.html">Refresh</a></li>
+			</ul>
+			
+		</nav2>
+              
+              
+              
+              <a href="#">
+				  	<div id="img">
+				  		<img src="images/img-01.png" alt="" href="#">
+				  	</div>
+              </a>
+                            
+              
+              
+              
+              <a href="#">
+				  	<div id="img7">
+				  	<img7> <img src="images/img-07.png"</img7>
+				  </div>
+              </a>
+              
+               <a href="#">
+				  	<div id="img8">
+				  	<img8> <img src="images/img-08.png"</img8>
+				  </div>
+              </a>
+              
+               <a href="#">
+				  	<div id="img9">
+				  	<img9> <img src="images/img-09.png"</img9>
+				  </div>
+              </a>
+              
+               <a href="#">
+				  	<div id="img10">
+				  	<img10> <img src="images/img-10.png"</img10>
+				  </div>
+              </a>
+              
+              
+              
+              
+				  
+				
+				</html>
